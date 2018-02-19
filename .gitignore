@@ -4,7 +4,8 @@
 *.dll
 *.lib
 *.user*
-MakeFile*
+*.o
+Makefile*
 *-ubyte
 *.stash
 *qmake*
@@ -13,7 +14,8 @@ other/
 picture/
 temp/
 sqlite*/
-build/
+build*/
+moc*
 
 !build 32 bits/*.keep
 

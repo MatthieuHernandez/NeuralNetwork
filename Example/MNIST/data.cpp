@@ -3,7 +3,7 @@
 namespace Data
 {
 
-string path = "mnist\\";
+string path = "mnist/";
 
 const string path_MNIST[4] = {path + "t10k-images.idx3-ubyte",
                               path + "t10k-labels.idx1-ubyte",
@@ -33,10 +33,12 @@ MNIST_struct Initialize_MNIST()
 
 void readImages(MNIST_struct &MNIST)
 {
+
     ifstream imagesTestFile;
     ifstream labelsTestFile;
     ifstream imagesTrainFile;
     ifstream labelsTrainFile;
+
     imagesTestFile.open(path_MNIST[0], ios::in | ios::binary);
     labelsTestFile.open(path_MNIST[1], ios::in | ios::binary);
     imagesTrainFile.open(path_MNIST[2], ios::in | ios::binary);

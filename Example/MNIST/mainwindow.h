@@ -10,7 +10,7 @@
 #include <sstream>
 #include <time.h>
 
-#include "neuralNetwork.h"
+#include "./../../src/neuralNetwork.h"
 #include "data.h"
 
 

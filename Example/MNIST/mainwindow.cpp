@@ -114,7 +114,7 @@ void MainWindow::compute()
         cout << "clustering rate max : " << clusteringRateMax << " epoch : " << epochMax << endl;
         clusteringRateVector.push_back(clusteringRate*100);
         graphClusteringRate();
-        ui->CRMAX->setText(QString::fromStdString((string)"CRMAX(%)" + to_string(clusteringRateMax*100)));
+        ui->CRMAX->setText(QString::fromStdString((string)"Clustering max : " + Data::to_string_with_precision(clusteringRateMax*100, 2) + "%"));
         QApplication::processEvents();
 
         for(int index = 0; index < MNIST.trainig.size; index ++)
@@ -133,7 +133,7 @@ void MainWindow::compute()
 
 void MainWindow::initializeNeuralNetwork()
 {
-    vector<int> structureOfNetwork {MNIST.sizeOfImages, 150, 50, MNIST.numberOfLabel};
+    vector<int> structureOfNetwork {MNIST.sizeOfImages, 10, MNIST.numberOfLabel};
 
     this->neuralNetwork = NeuralNetwork(structureOfNetwork);
 

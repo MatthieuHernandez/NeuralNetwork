@@ -102,7 +102,7 @@ void Perceptron::trainWithDesired(const vector<float> &inputs, float &desired, c
 void Perceptron::addAWeight()
 {
     numberOfInputs ++;
-    weights.push_back((rand()/(float)RAND_MAX * 2 - 1));
+    weights.push_back(randomInitializeWeight());
 }
 
 int Perceptron::isValid()

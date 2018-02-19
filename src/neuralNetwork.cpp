@@ -1,4 +1,4 @@
-#include "NeuralNetwork.h"
+#include "neuralNetwork.h"
 
 bool NeuralNetwork::isTheFirst = true;
 

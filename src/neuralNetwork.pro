@@ -17,7 +17,7 @@ CONFIG += c++14
 
 
 
-SOURCES += main.cpp \
+SOURCES += \
     $$PWD/neuralNetwork.cpp \
     $$PWD/perceptron.cpp \
     $$PWD/neuralNetworkGettersAndSetters.cpp \

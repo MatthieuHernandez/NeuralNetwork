@@ -20,11 +20,11 @@ TEMPLATE = app
 CONFIG += c++14
 
 SOURCES += \
-        ../MNIST/main.cpp \
+        main.cpp\
         mainwindow.cpp \
         data.cpp \
         ./../../lib/qcustomplot.cpp \
-        ./../../lib/qcustomplot.cpp
+
 
 HEADERS += mainwindow.h\
            data.h\
@@ -43,10 +43,10 @@ if(mingw) {
     QMAKE_CXXFLAGS += -O3
 }
 
-INCLUDEPATH += $$PWD\
-               "$$PWD\..\..\src" \
+INCLUDEPATH += $$PWD/
+               "$$PWD/../../src" \
 
-include("$$PWD\..\..\src\NeuralNetwork.pro")
+include("$$PWD/../../src/neuralNetwork.pro")
 
 Matthieu {
 
@@ -54,6 +54,7 @@ Matthieu {
                    "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include" \
                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/shared" \
                    "C:/Program Files (x86)/Windows Kits/10/Include/10.0.16299.0/ucrt" \
+                   "C:/Program Files (x86)/Windows Kits/10/Include/10.0.10240.0/um" \
 
     LIBS += -lpsapi \
 }
