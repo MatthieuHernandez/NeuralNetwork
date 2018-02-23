@@ -37,14 +37,14 @@ class NeuralNetwork
 
         bool classifiedWell;
 
-        vector<vector<float>> results;
-        vector<vector<float>> errors;
+        vector<vector<float> > results;
+        vector<vector<float> > errors;
         void backpropagationAlgorithm(const vector<float> &inputs, const vector<float> &desired);
         void calculateError(const int neuronNumberLayer, const int neuronNumber);
 
         void resetAllNeurons();
 
-        vector<vector<Perceptron>> neurons;
+        vector<vector<Perceptron> > neurons;
 
         vector<float> outputs;
 

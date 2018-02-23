@@ -1,6 +1,6 @@
 #include <iostream>
 #include <iomanip>
-#include <neuralnetwork.h>
+#include "neuralNetwork.h"
 
 #define PRECISION 1e-6f // 2e-7f
 
