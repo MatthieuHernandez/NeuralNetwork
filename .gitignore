@@ -6,6 +6,7 @@
 *.user*
 *.o
 Makefile*
+makefile*
 *-ubyte
 *.stash
 *qmake*

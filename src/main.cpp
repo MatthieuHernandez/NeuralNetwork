@@ -4,7 +4,7 @@
 
 #define PRECISION 1e-6f // 2e-7f
 
-int main()
+int main(/*int argc, char **argv*/)
 {
     cout << "IT COMPILES !" << endl << endl;
 
